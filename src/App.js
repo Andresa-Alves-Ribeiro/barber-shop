@@ -1,14 +1,10 @@
 import './App.css';
+import LandingPage from './LandingPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src='./assets/barbearia-logo.png' alt='Logo barbearia'></img>
-        <p>Barber Shop</p>
-      </header>
-
-      <body></body>
+      <LandingPage />
     </div>
   );
 }

@@ -1,12 +1,13 @@
 * {
-    background-color: black;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-header {
-    background-color: white;
-    color: white;
+.limitar-secao {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
-
 /* cores usadas: #B2987D, #000, #FFF, #252323 */
-
