@@ -45,7 +45,7 @@ A página terá um efeito interativo conhecido como "Dark mode". Basicamente a i
 
 Você pode acessar o link abaixo e visualizar o deploy:
 
-
+https://landing-barbearia.vercel.app/
 
 ou
 
