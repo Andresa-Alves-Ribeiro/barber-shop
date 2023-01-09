@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import Logo from '../assets/barbearia-logo.png';
 import LogoEscuro from '../assets/barbearia-logo-escuro.png';
@@ -6,16 +6,23 @@ import Moon from '../assets/moon.png';
 import Sun from '../assets/sun.png';
 
 export default function LandingPage() {
+
+    const [temaEscuro, setTemaEscuro] = useState(false);
+
+    const alterarTema = () => {
+        setTemaEscuro(!temaEscuro);
+    };
+
     return (
-        <div className='modo-claro'>
+        <div className={temaEscuro ? 'modo-escuro' : 'modo-claro'}>
 
             <header>
                 <div className='limitar-secao'>
-                    <img src={Logo} alt='Logo barbearia' className='logo'></img>
+                    <img src={temaEscuro ? LogoEscuro : Logo} alt='Logo barbearia' className='logo'></img>
 
-                    <button>
-                        <img src={Moon} alt='ícone' className="btn-icone" />
-                        <p>Dark</p>
+                    <button onClick={alterarTema} className={temaEscuro ? 'modo-escuro' : 'modo-claro'}>
+                        <img src={temaEscuro ? Sun : Moon} alt='ícone' className="btn-icone" />
+                        {temaEscuro ? `Mode Light` : `Mode Dark`}
                     </button>
                 </div>
             </header>
